@@ -1,0 +1,21 @@
+  .container {
+    font-size: 21px;
+    font-family: "brandon-grotesque","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  }
+
+  .bg-color{
+    background-color: rgb(160,218,255);
+    display: block;
+  }
+ 
+  .link-icon {
+    margin: 10px;
+  }
+  
+  footer {
+    padding: 42px 0px;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }

@@ -1,0 +1,27 @@
+  .container {
+    font-size: 21px;
+    font-family: "brandon-grotesque","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  }
+  
+  .title{
+    font-size: 28px;
+  }
+
+  #i-am-taher {
+    font-size: 6em;
+    font-family: 'Montez', cursive;
+  }
+
+  .bg-color{
+    background-color: rgb(160,218,255);
+    display: block;
+  }
+
+  .pencil {
+    width: 150px;
+    margin: 20px;
+  }
+
+  .proj-img {
+    padding-bottom: 20px;
+  }
