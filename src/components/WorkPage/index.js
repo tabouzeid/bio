@@ -40,7 +40,7 @@ function WorkPage () {
             id: "tabouzeid/google_book_search",
             title: "Google Book Search",
             description: "This application searches google books for whatever you specify in the search field. You may save the books you find and view them later ont he 'Saved' tab. You can also remove them by clicking on the 'Remove' button in the saved page. This application has a react frontend and an express backend with a Mongo DB to persist information.",
-            imageUrl: "https://github.com/tabouzeid/google_book_search/blob/master/public/assets/images/app_screenshot.png",
+            imageUrl: "https://github.com/tabouzeid/google_book_search/blob/master/public/assets/images/app_screenshot.png?raw=true",
             bgColor: "bronze",
             appUrl: "https://radiant-crag-34329.herokuapp.com/",
         },
