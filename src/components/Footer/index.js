@@ -26,7 +26,7 @@ function Footer() {
                             <path d={site.iconSvgPath}></path>
                         </svg>
                     </a>))}
-                    <p>© 2020 <a href="https://github.com/tabouzeid">Taher Abouzeid</a>. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} <a href="https://github.com/tabouzeid">Taher Abouzeid</a>. All rights reserved.</p>
                 </footer>
             </div>
         </div>

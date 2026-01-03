@@ -24,3 +24,17 @@
   .proj-img {
     padding-bottom: 20px;
   }
+
+  .project-section {
+    background-color: var(--project-bg-color);
+  }
+
+  .project-title-link {
+    color: black;
+    text-decoration: none;
+  }
+
+  .project-title-link:hover {
+    color: black;
+    text-decoration: underline;
+  }

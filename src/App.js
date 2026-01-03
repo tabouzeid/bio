@@ -1,25 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './components/Header'
 import Footer from './components/Footer'
 import FrontPage from './components/FrontPage'
 import WorkPage from './components/WorkPage'
+import ErrorBoundary from './components/ErrorBoundary'
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path={"/"}>
-          <FrontPage />
-        </Route>
-        <Route exact path={"/work"}>
-          <WorkPage />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<FrontPage />} />
+          <Route path="/work" element={<WorkPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </ErrorBoundary>
   );
 }
 

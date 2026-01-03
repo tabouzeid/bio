@@ -15,7 +15,12 @@ function FrontPage() {
 
                     <div className="row">
                         <section className="col-12 justify-content-center center">
-                            <img src="./assets/img/background.png" className="hello-image" alt="Background" />
+                            <img
+                                src="./assets/img/background.png"
+                                className="hello-image"
+                                alt="Portfolio background illustration"
+                                loading="eager"
+                            />
                         </section>
                     </div>
                 </div>
@@ -26,11 +31,15 @@ function FrontPage() {
                         <section className="col-12 text-center">
                             <article className="about-me-article">
                                 <figure>
-                                    <img src="./assets/img/me.jpg" className="bio-image" alt="me" />
+                                    <img
+                                        src="./assets/img/me.jpg"
+                                        className="bio-image"
+                                        alt="Taher Abouzeid"
+                                        loading="lazy"
+                                    />
                                 </figure>
                                 <p className="title">Hi</p>
-                                <p>I'm a software engineer based in New York, USA. I have a passion for coding and love to create new sites
-                        </p>
+                                <p>I'm a software engineer based in New York, USA. I have a passion for coding and love to create new sites</p>
                             </article>
                         </section>
                     </div>

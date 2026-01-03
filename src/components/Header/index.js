@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 function Header(){
@@ -9,10 +10,10 @@ function Header(){
                     <nav className="col">
                         <ul className="nav justify-content-end transition">
                             <li className="nav-item">
-                                <a className="nav-link" href="/">About</a>
+                                <Link className="nav-link" to="/">About</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/work">Work</a>
+                                <Link className="nav-link" to="/work">Work</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="./assets/doc/resume.pdf" download="">Resume</a>
