@@ -1,15 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/static/(.*)",
@@ -37,6 +28,12 @@
           "value": "public, max-age=0, must-revalidate"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!static|assets|favicon.ico|logo192.png|logo512.png|manifest.json|robots.txt).*)",
+      "destination": "/index.html"
     }
   ]
 }
