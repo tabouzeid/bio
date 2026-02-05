@@ -44,7 +44,7 @@ function FrontPage() {
           </div>
 
           <motion.div
-            className="flex justify-center pb-section-y"
+            className="flex justify-center mt-12"
             {...animations.scaleIn}
           >
             <img

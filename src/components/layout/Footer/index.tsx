@@ -25,12 +25,12 @@ function Footer() {
   return (
     <div className="bg-primary-light">
       <div className="container-custom px-4">
-        <footer className={cn('text-center', tokens.spacing.section.y)} role="contentinfo">
+        <footer className={cn('text-center py-6 md:py-8')} role="contentinfo">
           <div
             className={cn(
               'flex justify-center',
               tokens.spacing.gap.responsive.small,
-              tokens.spacing.mb.medium
+              'mb-3'
             )}
           >
             {links.map((site) => {
