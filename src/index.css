@@ -1,18 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 antialiased;
+    font-family:
+      'brandon-grotesque', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+
+  /* Focus visible styles for accessibility */
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-2 outline-offset-2 outline-gray-900 rounded;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@layer components {
+  /* Background utilities */
+  .bg-primary {
+    @apply bg-primary-light;
+  }
 
-.bg-color{
-  background-color: rgb(160,218,255);
-  display: block;
+  /* Container utilities */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Center layout utility */
+  .center-layout {
+    @apply text-center mx-auto;
+  }
+
+  /* Skip to main content link */
+  .skip-link {
+    @apply absolute -top-10 left-4 bg-gray-900 text-white px-4 py-2 rounded focus:top-4 transition-all;
+  }
+
+  /* Interactive link base */
+  .link {
+    @apply text-gray-800 hover:text-gray-600 transition-colors no-underline;
+  }
+
+  /* Icon button base */
+  .icon-btn {
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-full hover:bg-gray-200/50 transition-colors;
+  }
+
+  /* Card/container with shadow */
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  /* Avatar image */
+  .avatar {
+    @apply rounded-full object-cover shadow-md;
+  }
+
+  /* Project image */
+  .project-img {
+    @apply rounded-lg shadow-lg w-full;
+  }
 }
