@@ -1,11 +1,11 @@
-  name: CI
-  on:
-    push:
-      branches: [main]
-    pull_request:
+name: CI
+on:
+  push:
+    branches: [master]
+  pull_request:
 
-  jobs:
-    ci:
-      uses: tabouzeid/cicd/.github/workflows/node.yml@main
-      with:
-        node-version: '20'
+jobs:
+  ci:
+    uses: tabouzeid/cicd/.github/workflows/node.yml@main
+    with:
+      node-version: '20'
