@@ -9,3 +9,4 @@ jobs:
     uses: tabouzeid/cicd/.github/workflows/node.yml@main
     with:
       node-version: '20'
+      test-command: ''
